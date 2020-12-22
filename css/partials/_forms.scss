@@ -1,0 +1,70 @@
+.category {
+  &__form {
+    @include dfcc;
+    border-radius: 12px;
+    padding: 12px 20px 12px 15px;
+    background-color: #F9F9F9;
+    border: 1px solid darken($lightGray, 10%);
+  }
+
+  &__list {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      right: 0;
+      top: 50%;
+      transform: rotate(90deg);
+      background-color: #A9A9A9;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 38px;
+    cursor: pointer;
+  }
+
+  &__item {
+    margin-right: 60px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $dark;
+    cursor: pointer;
+  }
+}
+
+.search {
+  border: none;
+  width: 300px;
+  padding-left: 22px;
+  padding-right: 30px;
+  background-color: #F9F9F9;
+  position: relative;
+  color: #A9A9A9;
+
+  &::placeholder {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: inherit;
+    background-color: inherit;
+  }
+
+  &__icon {
+    @include dfcc;
+  }
+
+  &__img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+}

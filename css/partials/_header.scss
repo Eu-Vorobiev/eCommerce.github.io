@@ -1,0 +1,89 @@
+.header {
+  &__top {
+    padding: 16px 0;
+    @include dfcb;
+    border-bottom: 1px solid $lightGray;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  &__link {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $accent-color;
+    position: relative;
+
+    &::after {
+      display: none;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: darken($accent-color, 10%);
+      transition: all .4s ease-in-out;
+    }
+
+    &:hover:not(.mail-to):not(.call-to) {
+      &::after {
+        display: block;
+      }
+    }
+  }
+
+  &__middle {
+    padding: 40px 0;
+    @include dfcb;
+  }
+
+}
+
+.call-to,
+.mail-to {
+  color: $dark;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.user {
+  margin-right: 40px;
+}
+
+.cart {
+  width: 24px;
+  height: 24px;
+
+  &__link {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "4";
+      @include dfcc;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      left: -5px;
+      bottom: 0;
+      background-color: $secondary-color;
+      color: $white;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+
+}

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,600" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700" rel="stylesheet" />
 
   <title>Freshnesecom</title>
@@ -13,7 +13,69 @@
 </head>
 
 <body>
-  
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__top">
+          <ul class="header__list header__contact">
+            <li class="header__item">
+              <a class="header__link" href="#">Chat with us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link call-to" href="tel:+420336775664">+420 336 775 664</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link mail-to" href="mailto:info@freshnesecom.com">info@freshnesecom.com</a>
+            </li>
+          </ul>
+          <ul class="header__list header__about-us">
+            <li class="header__item">
+              <a class="header__link" href="#">Blog</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">About Us</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__middle">
+          <div class="logo">
+            <a href="index.html" class="logo__link">
+              <img class="logo__img" src="img/logo.svg" alt="Freshnesecom">
+            </a>
+          </div>
+          <div class="category__form form__select">
+            <ul class="category__list">
+              <div class="category__icon">
+                <img src="img/arrow-down.svg" alt="">
+              </div>
+              <li class="category__item">
+                All categories
+              </li>
+            </ul>
+            <label for="category__form">
+              <input class="search" type="text" placeholder="Search Products, categories...">
+            </label>
+            <div class="search__icon">
+              <img class="search__img" src="img/search.svg" alt="Search">
+            </div>
+          </div>
+          <div class="header__actions">
+            <a href="#" class="user__link">
+              <img src="img/user.svg" alt="Profile" class="user">
+            </a>
+            <a href="#" class="cart__link">
+              <img src="img/cart.svg" alt="Cart" class="cart">
+            </a>
+          </div>
+
+        </div>
+        <nav class="header__nav"></nav>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
