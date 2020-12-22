@@ -1,0 +1,50 @@
+.btn,
+button,
+a {
+  display: inline-block;
+  border: none;
+  border-radius: 12px;
+  color: $dark;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* Color */
+.btn {
+  &--primary {
+    background-color: $accent-color;
+    color: $white;
+    border: 2px solid darken($accent-color, 10%);
+  }
+
+  &--bordered {
+    background-color: $white;
+    border: 2px solid #92C064;
+  }
+
+  &--gray {
+    background-color: $lightGray;
+    border: none;
+  }
+
+  &--transparent {
+    background-color: $white;
+    border: none;
+  }
+}
+/* Size*/
+.btn{
+  &--default {
+    padding: 17px 48px;
+  }
+
+  &--sm {
+    padding: 12.5px 16px;
+  }
+
+  &--xs {
+    padding: 6.5px 12px;
+  }
+}
+  
