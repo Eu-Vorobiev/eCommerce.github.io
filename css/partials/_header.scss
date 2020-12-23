@@ -45,6 +45,11 @@
     @include dfcb;
   }
 
+  &__nav{
+    background-color: #f9f9f9;
+    padding: 16px 0;
+  }
+
 }
 
 .call-to,
@@ -84,6 +89,4 @@
       line-height: 18px;
     }
   }
-
-
 }

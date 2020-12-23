@@ -1,0 +1,35 @@
+.aside{
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: $dark;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__list {
+    margin-bottom: 48px;
+  }
+
+  &__item{
+    margin-bottom: 12px;
+  }
+  &__link {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: $accent-color;
+    transition: opacity .2s ease-in-out;
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &--btn {
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: darken($lightGray, 10%);
+    }
+  }
+}
