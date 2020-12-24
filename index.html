@@ -217,10 +217,10 @@
     </nav>
   </header>
   <!--./header-->
-  <!-- СДЕЛАТЬ КНОПКЕ СПРАВА/СЛЕВА СТРЕЛОЧКИ , ДОБАВИТЬ В _ФАЙЛ НОВЫЕ КЛАССЫ-->
+
   <main class="main">
-    <section class="production">
-      <div class="container">
+    <div class="container">
+      <section class="production">
         <div class="prod__main section--padding">
           <aside class="prod__aside aside__wrap">
             <h3 class="aside__title">Category menu</h3>
@@ -408,11 +408,12 @@
           </div>
         </div>
         <!--/.Production Selling-->
-      </div>
-    </section><!--Production-->
+      </section>
+      <!--Production-->
 
-    <section class="prod__slider">
-      <div class="container">
+      <section class="reviews__slider"></section>
+
+      <section class="prod__slider section--padding">
         <div class="section__heading">
           <h3 class="section__title">Section Heading</h3>
           <a class="section__link btn btn--transparent btn-xs" href="#">Button
@@ -435,9 +436,149 @@
               </div>
             </div>
           </div>
+          <div class="card card__prod">
+            <div class="card__img">
+              <img src="img/blog-2.jpg" alt="Product photo">
+              <div class="card__sale">-11%</div>
+            </div>
+            <div class="card__item">
+              <div class="card__info">
+                <h4 class="card__title">Product title</h4>
+                <p class="card__text">Space for a small product description </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">1.48 <span>USD</span></div>
+                <button class="btn btn--primary btn--xs card__btn">Buy now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card__prod">
+            <div class="card__img">
+              <img src="img/prod-photo.png" alt="Product photo">
+            </div>
+            <div class="card__item">
+              <div class="card__info">
+                <h4 class="card__title">Product title</h4>
+                <p class="card__text">Space for a small product description </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">1.48 <span>USD</span></div>
+                <button class="btn btn--primary btn--xs card__btn">Buy now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card card__prod">
+            <div class="card__img">
+              <img src="img/blog-1.jpg" alt="Product photo">
+              <div class="card__sale">-25%</div>
+            </div>
+            <div class="card__item">
+              <div class="card__info">
+                <h4 class="card__title">Product title</h4>
+                <p class="card__text">Space for a small product description </p>
+              </div>
+              <div class="card__footer">
+                <div class="card__price">1.48 <span>USD</span></div>
+                <button class="btn btn--primary btn--xs card__btn">Buy now</button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="blog section--padding">
+        <div class="section__heading">
+          <h3 class="section__title">Read our Blog posts</h3>
+          <a class="section__link btn btn--transparent btn-xs" href="#">Go to Blog
+            <img class="accent-arrow-right" src="img/accent-arrow-right.svg" alt="">
+          </a>
+        </div>
+        <div class="blog-card__wrapper">
+          <div class="blog-card blog-card--lg">
+            <div class="blog-card__photo">
+              <img src="img/blog-1.jpg" alt="Blog picture">
+            </div>
+            <div class="blog-card__content blog-card__content--white">
+              <a class="blog-card__category" href="#">Dinner tips</a>
+              <div class="blog-card__info">
+                <h3 class="blog-card__title">Our chef tips for a great and tasty dinner ready in 20 minutes</h3>
+                <div class="blog-card__footer">
+                  <img src="img/avatar.jpg" alt="Author Avatar" class="blog-card__avatar">
+                  <span class="blog-card__author">Author</span>
+                  <time class="blog-card__date" datetime="06-17-2020">17.06.2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card blog-card--md">
+            <div class="blog-card__photo">
+              <img src="img/blog-2.jpg" alt="Blog picture">
+            </div>
+            <div class="blog-card__content blog-card__content--black">
+              <a class="blog-card__category blog-card__category--gray" href="#">Vegetable</a>
+              <div class="blog-card__info">
+                <h3 class="blog-card__title blog-card__title--md">Which vegetable your family will love and want’s eat
+                  each day</h3>
+                <div class="blog-card__footer">
+                  <img src="img/avatar.jpg" alt="Author Avatar" class="blog-card__avatar">
+                  <span class="blog-card__author">Author</span>
+                  <time class="blog-card__date" datetime="06-15-2020">15.06.2020</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-card__inner">
+            <div class="blog-card blog-card--sm">
+              <div class="blog-card__photo">
+                <img src="img/blog-3.png" alt="Blog picture">
+              </div>
+              <div class="blog-card__content blog-card__content--black">
+                <div class="blog-card__info">
+                  <h3 class="blog-card__title blog-card__title--sm">Salat is kinda good start to your morning routines
+                  </h3>
+                  <div class="blog-card__footer">
+                    <img src="img/avatar.jpg" alt="Author Avatar" class="blog-card__avatar">
+                    <span class="blog-card__author">Author</span>
+                    <time class="blog-card__date" datetime="01-14-2020">14.01.2020</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card blog-card--sm">
+              <div class="blog-card__photo">
+                <img src="img/blog-4.png" alt="Blog picture">
+              </div>
+              <div class="blog-card__content blog-card__content--black">
+                <div class="blog-card__info">
+                  <h3 class="blog-card__title blog-card__title--sm">Our chef tips for a great and healthy breakfast</h3>
+                  <div class="blog-card__footer">
+                    <img src="img/avatar.jpg" alt="Author Avatar" class="blog-card__avatar">
+                    <span class="blog-card__author">Author</span>
+                    <time class="blog-card__date" datetime="01-14-2020">14.01.2020</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-card blog-card--sm">
+              <div class="blog-card__photo">
+                <img src="img/blog-5.png" alt="Blog picture">
+              </div>
+              <div class="blog-card__content blog-card__content--black">
+                <div class="blog-card__info">
+                  <h3 class="blog-card__title blog-card__title--sm">Prepare a simple and delicious breads</h3>
+                  <div class="blog-card__footer">
+                    <img src="img/avatar.jpg" alt="Author Avatar" class="blog-card__avatar">
+                    <span class="blog-card__author">Author</span>
+                    <time class="blog-card__date" datetime="01-14-2020">14.01.2020</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      <!--/.Blog-->
+    </div>
   </main>
   <!-- <script src="js/main.js"></script> -->
 </body>
