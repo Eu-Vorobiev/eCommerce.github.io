@@ -161,6 +161,13 @@
     align-self: flex-end;
   }
 
+  &__link {
+    color: inherit;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 8px;
