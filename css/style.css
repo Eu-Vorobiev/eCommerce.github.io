@@ -713,6 +713,72 @@ a {
   background-color: #51732e;
 }
 
+.reviews__slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+}
+
+.reviews__item {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 24px 32px 24px;
+  background: #fff;
+  border: 1px solid #F1F1F1;
+  border-radius: 12px;
+  position: relative;
+}
+
+.reviews__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  margin-bottom: 16px;
+}
+
+.reviews__author {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: darkgray;
+}
+
+.reviews__photo {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 1;
+}
+
+.reviews__photo img {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .blog-card {
   position: relative;
   overflow: hidden;
