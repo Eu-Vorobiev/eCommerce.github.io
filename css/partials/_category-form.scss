@@ -101,6 +101,7 @@
   background-color: #F9F9F9;
   position: relative;
   color: #A9A9A9;
+  outline: none;
 
   &::placeholder {
     font-family: $secondary-font;
@@ -119,5 +120,50 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
+  }
+}
+.form__title {
+  margin-bottom: 8px;
+}
+.form__text {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: $secondary-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #A9A9A9;
+}
+
+.form-archieve__label {
+  @include dfcb;
+  padding: 12px;
+  background: #F9F9F9;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+}
+
+.form__email {
+  border: none;
+  width: 140px;
+  padding-left: 0;
+  padding-right: 10px;
+  background-color: #F9F9F9;
+  color: #A9A9A9;
+  outline: none;
+  &::placeholder {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: inherit;
+  }
+}
+
+.form-archieve__btn {
+  background-color: transparent;
+  transition: all .2s linear;
+  &:hover {
+    background-color: darken($lightGray, 25%);
   }
 }

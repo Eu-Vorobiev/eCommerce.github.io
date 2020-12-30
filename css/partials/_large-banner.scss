@@ -1,0 +1,14 @@
+.large-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 16px 0;
+
+  .blog-card__content--white {
+    padding-right: 165px;
+  }
+
+  .blog-card__title {
+    line-height: 33px;
+  }
+}

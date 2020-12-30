@@ -1,0 +1,30 @@
+.breadcrumbs {
+  display: flex;
+  padding: 16px 0;
+
+  &__link,
+  span {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #a9a9a9;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:last-child {
+      color: $dark;
+
+      &:hover {
+        text-decoration: none;
+        cursor: auto;
+      }
+    }
+  }
+
+  span {
+    margin: 0px 10px;
+  }
+}

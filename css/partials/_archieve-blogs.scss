@@ -1,0 +1,23 @@
+.archieve {
+  &-section {
+    display: flex;
+  }
+
+  &-aside {
+    margin-right: 32px;
+  }
+
+  &__link {
+    color: #A9A9A9;
+  }
+
+  &-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    .blog-card__content--black {
+      justify-content: flex-start;
+    }
+  }
+}

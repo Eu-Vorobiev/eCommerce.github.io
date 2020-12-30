@@ -1,7 +1,7 @@
 .prod {
   &__main{
     display: grid;
-    grid-template-columns: 240px 1fr 1fr;
+    grid-template-columns: 250px 1fr 1fr;
     grid-template-rows: minmax(auto, 300px);
     gap: 0 30px;
   }
