@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1260px;
   padding: 0 45px;
   margin: 0 auto;
   background-color: #fff;
@@ -36,6 +36,16 @@ body {
           box-shadow: none;
   padding: 0 45px;
   margin: 0 auto;
+}
+
+.container--md {
+  width: 100%;
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 section {
@@ -73,6 +83,10 @@ a {
 
 .section--padding-md {
   padding: 48px 0;
+}
+
+.section--padding-sm {
+  padding: 16px 0;
 }
 
 .section__heading {
@@ -114,6 +128,8 @@ a {
   line-height: 16px;
   color: #A9A9A9;
   margin-right: 24px;
+  -webkit-transition: color .2s linear;
+  transition: color .2s linear;
 }
 
 .section__link--view.active {
@@ -127,26 +143,6 @@ a {
 .section__link--view:hover {
   text-decoration: none;
   opacity: 0.7;
-}
-
-.info-tag {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #A9A9A9;
-}
-
-.info-tag span {
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-  color: #6A983C;
-  background-color: #e8e8e8;
-  border-radius: 12px;
-  padding: 0px 8px;
-  margin-right: 5px;
 }
 
 .btn,
@@ -917,9 +913,97 @@ a {
      object-position: center;
 }
 
+.current-blog__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.current-blog__aside {
+  max-width: 170px;
+  margin-right: 32px;
+}
+
+.current-blog__aside-btn {
+  padding: 6px 0;
+  opacity: 1;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+.current-blog__aside-btn:hover {
+  opacity: .7;
+}
+
+.current-blog__paramethers {
+  margin-right: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #A9A9A9;
+}
+
+.current-blog__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.param__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.current-blog-card__content {
+  padding: 32px 200px;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 12px;
+}
+
+.current-blog-card__info {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.info__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.info__link:hover {
+  text-decoration: underline;
+}
+
 .blog-card {
   position: relative;
   overflow: hidden;
+}
+
+.blog-card--current {
+  width: 100%;
+  height: 480px;
+  z-index: 1;
 }
 
 .blog-card--lg {
@@ -1261,5 +1345,119 @@ a {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination__counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.pagination__number {
+  margin-right: 8px;
+}
+
+.pagination__number:first-child {
+  margin-left: 8px;
+}
+
+.pagination__link {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+}
+
+.pagination__link.active {
+  color: #6A983C;
+}
+
+.pagination__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.pagination__btn:hover {
+  background-color: #51732e;
+}
+
+.tag-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.tag-blog {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  padding: 0px 8px;
+  margin: 0 8px 8px 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.tag-blog:hover {
+  background-color: #cfcfcf;
+}
+
+.tag-blog__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.info-tag {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A9A9A9;
+}
+
+.info-tag span {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6A983C;
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  padding: 0px 8px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */

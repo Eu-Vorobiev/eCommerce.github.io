@@ -1,0 +1,39 @@
+.pagination {
+  @include dfcb;
+
+  &__counter {
+    display: flex;
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+  }
+
+  &__number {
+    margin-right: 8px;
+    &:first-child {
+      margin-left: 8px;
+    }
+  }
+  &__link {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: $dark;
+    &.active {
+      color: $accent-color;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
