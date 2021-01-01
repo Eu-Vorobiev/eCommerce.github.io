@@ -1,0 +1,36 @@
+.share {
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: $dark;
+
+  .linkedin__icon {
+    margin-right: 3px;
+    vertical-align: baseline;
+  }
+
+  &__link {
+    margin-right: 16px;
+    transition: transform .2s ease-in-out;
+
+    img {
+      margin-right: 3px;
+      vertical-align: middle;
+    }
+
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
