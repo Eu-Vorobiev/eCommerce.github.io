@@ -1,0 +1,66 @@
+.form-comments {
+  &__input {
+    background: $white;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 16px;
+
+    &--admin {
+      margin-bottom: 24px;
+    }
+
+    &--customer {
+      width: 85%;
+      float: right;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__photo {
+    margin-right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    img {
+      max-width: 100%;
+      height: inherit;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    margin-right: 6px;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: $dark;
+  }
+
+  &__date {
+    font-family: $secondary-font;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D1D1D1;
+  }
+
+  &__text {
+    font-family: $secondary-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $dark;
+  }
+}

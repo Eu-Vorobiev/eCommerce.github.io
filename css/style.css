@@ -842,6 +842,79 @@ a {
   background-color: #b5b5b5;
 }
 
+.form-comments__input {
+  background: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.form-comments__input--admin {
+  margin-bottom: 24px;
+}
+
+.form-comments__input--customer {
+  width: 85%;
+  float: right;
+}
+
+.form-comments__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.form-comments__photo {
+  margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.form-comments__photo img {
+  max-width: 100%;
+  height: inherit;
+}
+
+.form-comments__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-comments__name {
+  margin-right: 6px;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+}
+
+.form-comments__date {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #D1D1D1;
+}
+
+.form-comments__text {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
+}
+
 .prod__main {
   display: -ms-grid;
   display: grid;
@@ -1090,7 +1163,6 @@ a {
 
 .current-blog__aside {
   max-width: 170px;
-  margin-right: 32px;
 }
 
 .current-blog__aside-btn {
@@ -1119,6 +1191,10 @@ a {
   font-size: 32px;
   line-height: 1.4;
   color: #fff;
+}
+
+.current-blog__main {
+  margin-left: 32px;
 }
 
 .current-blog__main-content {
@@ -1261,6 +1337,10 @@ a {
   height: 150px;
   z-index: 0;
   margin-bottom: 12px;
+}
+
+.blog-card--md .blog-card__photo--related {
+  margin-bottom: 24px;
 }
 
 .blog-card--md .blog-card__photo img {
@@ -1410,6 +1490,10 @@ a {
   color: #151515;
 }
 
+.blog-card__content--related {
+  height: auto;
+}
+
 .blog-card__category {
   font-style: normal;
   font-weight: 600;
@@ -1466,6 +1550,12 @@ a {
   line-height: 22px;
 }
 
+.blog-card__title--related {
+  margin-bottom: 8px;
+  font-size: 15px;
+  line-height: 25px;
+}
+
 .blog-card__footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1493,6 +1583,42 @@ a {
 
 .blog-card__date {
   opacity: 0.8;
+}
+
+.related-blog__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 0 32px;
+}
+
+.archieve-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.archieve-aside {
+  margin-right: 32px;
+}
+
+.archieve__link {
+  color: #A9A9A9;
+}
+
+.archieve-posts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.archieve-posts .blog-card__content--black {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .breadcrumbs {
@@ -1546,34 +1672,6 @@ a {
 
 .large-banner .blog-card__title {
   line-height: 33px;
-}
-
-.archieve-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.archieve-aside {
-  margin-right: 32px;
-}
-
-.archieve__link {
-  color: #A9A9A9;
-}
-
-.archieve-posts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-}
-
-.archieve-posts .blog-card__content--black {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .pagination {
@@ -1657,6 +1755,14 @@ a {
   transition: all .2s ease-in-out;
 }
 
+.tag-blog--comments {
+  margin: 0;
+}
+
+.tag-blog--customer {
+  color: #151515;
+}
+
 .tag-blog:hover {
   background-color: #cfcfcf;
 }
@@ -1667,6 +1773,7 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 170px;
   margin-bottom: 48px;
 }
 

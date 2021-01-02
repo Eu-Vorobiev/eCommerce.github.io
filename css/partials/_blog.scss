@@ -26,12 +26,16 @@
       z-index: 0;
       margin-bottom: 12px;
 
+      &--related {
+        margin-bottom: 24px;
+      }
+
       img {
         width: inherit;
         height: inherit;
       }
     }
-    
+
     .blog-card__footer {
       color: $dark;
 
@@ -51,6 +55,7 @@
     height: 96px;
     display: flex;
     flex-direction: row-reverse;
+
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -126,8 +131,8 @@
     z-index: 2;
     @include dfcolfs;
 
-    
-    &--white{
+
+    &--white {
       padding: 32px 24px;
       justify-content: space-between;
       color: $white;
@@ -138,6 +143,10 @@
     &--black {
       justify-content: flex-end;
       color: $dark;
+    }
+
+    &--related {
+      height: auto;
     }
   }
 
@@ -169,6 +178,7 @@
 
   &__link {
     color: inherit;
+
     &:hover {
       text-decoration: underline;
     }
@@ -192,6 +202,12 @@
       font-weight: 500;
       font-size: 15px;
       line-height: 22px;
+    }
+
+    &--related {
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 25px;
     }
   }
 
